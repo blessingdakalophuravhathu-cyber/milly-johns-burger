@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Milly John's Burgers</title>
+
+<link rel="stylesheet" href="css_assets/mystyles.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+body {
+margin: 0;
+font-family: 'Montserrat', sans-serif;
+background: #f5f5f5;
+color: #333;
+}
+
+/* HEADER */
+header {
+background: white;
+text-align: center;
+padding: 20px;
+box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+header img {
+width: 120px;
+height: 120px;
+border-radius: 12px;
+object-fit: cover;
+}
+
+header h1 {
+margin: 10px 0 5px;
+color: #F5A623;
+font-size: 2.2rem;
+}
+
+header p {
+margin: 0;
+color: #555;
+font-size: 1rem;
+}
+
+/* NAVIGATION */
+nav {
+background: #1F5E87;
+padding: 15px;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+gap: 15px;
+}
+
+nav a {
+color: white;
+text-decoration: none;
+font-weight: 600;
+padding: 8px 14px;
+border-radius: 5px;
+transition: background 0.3s ease;
+}
+
+nav a:hover {
+background: rgba(255,255,255,0.2);
+}
+
+/* TOP IMAGE */
+.banner img {
+width: 100%;
+height: 400px;
+object-fit: cover;
+display: block;
+}
+
+/* HERO SECTION */
+.hero {
+background:
+linear-gradient(rgba(31,94,135,0.85), rgba(245,166,35,0.85)),
+url('images/hero-burger.jpg');
+
+background-size: cover;
+background-position: center;
+
+color: white;
+text-align: center;
+padding: 90px 20px;
+}
+
+.hero h2 {
+font-size: clamp(2rem, 5vw, 3.5rem);
+margin-bottom: 15px;
+}
+
+.hero p {
+font-size: 1.2rem;
+max-width: 600px;
+margin: auto;
+line-height: 1.6;
+}
+
+/* FEATURED SECTION */
+.featured {
+padding: 50px 20px;
+text-align: center;
+}
+
+.featured h2 {
+color: #1F5E87;
+margin-bottom: 35px;
+font-size: 2rem;
+}
+
+/* GRID */
+.grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+gap: 25px;
+max-width: 1200px;
+margin: auto;
+}
+
+/* CARDS */
+.card {
+background: white;
+border-radius: 14px;
+overflow: hidden;
+box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+text-decoration: none;
+color: inherit;
+}
+
+.card:hover {
+transform: translateY(-5px) scale(1.03);
+box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+.card img {
+width: 100%;
+height: 180px;
+object-fit: cover;
+}
+
+.card h3 {
+margin: 15px 0 10px;
+color: #1F5E87;
+font-size: 1.3rem;
+}
+
+.card p {
+margin-bottom: 20px;
+color: #F5A623;
+font-weight: bold;
+font-size: 1rem;
+}
+
+/* FOOTER */
+footer {
+background: #1F5E87;
+color: white;
+text-align: center;
+padding: 20px;
+margin-top: 40px;
+font-size: 0.95rem;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+.hero {
+padding: 70px 15px;
+}
+
+.banner img {
+height: 250px;
+}
+
+header h1 {
+font-size: 1.8rem;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+
+<img src="images/logo.jpg"
+alt="Milly John's Burgers Logo">
+
+<h1>Milly John's Burgers</h1>
+
+<p>Fresh, juicy burgers made with love every day.</p>
+
+</header>
+
+<!-- NAVIGATION -->
+<nav>
+
+<a href="index.html">Home</a>
+
+<a href="menu.html">Menu</a>
+
+<a href="contact.html">Contact Us</a>
+
+<a href="about.html">About Us</a>
+
+<a href="enquiries.html">Enquiries</a>
+
+</nav>
+
+<!-- TOP BANNER -->
+<section class="banner">
+
+<img src="images/hero-burger.jpg"
+alt="Delicious Burger Banner">
+
+</section>
+
+<!-- HERO -->
+<section class="hero">
+
+<h2>Big Taste. Big Burgers.</h2>
+
+<p>
+Order your favourite burgers, desserts, and cold drinks
+in seconds. Fresh ingredients, amazing flavour,
+and unbeatable quality.
+</p>
+
+</section>
+
+<!-- FEATURED PRODUCTS -->
+<section class="featured">
+
+<h2>Featured Picks</h2>
+
+<div class="grid">
+
+<!-- BEEF -->
+<a class="card" href="beef.html">
+
+<img src="images/beef-burger.jpg"
+alt="Beef Burger"
+loading="lazy">
+
+<h3>Beef Burgers</h3>
+
+<p>From R36</p>
+
+</a>
+
+<!-- CHICKEN -->
+<a class="card" href="chicken.html">
+
+<img src="images/chicken-burger.jpg"
+alt="Chicken Burger"
+loading="lazy">
+
+<h3>Chicken Burgers</h3>
+
+<p>From R25</p>
+
+</a>
+
+<!-- DESSERT -->
+<a class="card" href="dessert.html">
+
+<img src="images/dessert.jpg"
+alt="Dessert"
+loading="lazy">
+
+<h3>Desserts</h3>
+
+<p>Sweet Treats</p>
+
+</a>
+
+<!-- DRINKS -->
+<a class="card" href="drinks.html">
+
+<img src="images/cold-beverages.jpg"
+alt="Cold Drinks"
+loading="lazy">
+
+<h3>Cold Drinks</h3>
+
+<p>Refreshing</p>
+
+</a>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+
+<p>&copy; 2026 Milly John's Burgers | All Rights Reserved</p>
+
+</footer>
+
+</body>
+</html>

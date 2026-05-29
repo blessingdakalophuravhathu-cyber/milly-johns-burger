@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Og Milly John's Peri-Peri Wings Order</title>
+
+<style>
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:#f4f4f4;
+}
+
+header{
+background:#1F5E87;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+nav{
+background:#1F5E87;
+padding:15px;
+text-align:center;
+}
+
+nav a{
+color:white;
+margin:15px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.container{
+max-width:500px;
+margin:30px auto;
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.option{
+background:#eeeeee;
+padding:15px;
+margin:10px 0;
+border-radius:8px;
+cursor:pointer;
+}
+
+.option:hover{
+background:#dddddd;
+}
+
+button{
+width:100%;
+padding:15px;
+margin-top:20px;
+background:#F5A623;
+color:white;
+border:none;
+font-size:18px;
+border-radius:8px;
+cursor:pointer;
+}
+
+button:hover{
+background:#e49300;
+}
+
+#selected{
+margin-top:15px;
+font-weight:bold;
+text-align:center;
+color:#1F5E87;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Milly John's Burgers</h1>
+</header>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="menu.html">Menu</a>
+<a href="contact.html">Contact us</a>
+<a href="about.html">About us</a>
+<a href="enquiries.html">Enquiries</a>
+</nav>
+
+<div class="container">
+
+<h2>Og Milly John's Peri-Peri Wings</h2>
+
+<div class="option" onclick="choose('Four Hot Wings and Small Fries - R29.00')">
+Four Hot Wings and Small Fries - R29.00
+</div>
+
+<div class="option" onclick="choose('Six Hot Wings + Medium Fries - R55.00')">
+Six Hot Wings + Medium Fries - R55.00
+</div>
+
+<div class="option" onclick="choose('Twelve Hot Wings + Large Fries - R89.20')">
+Twelve Hot Wings + Large Fries - R89.20
+</div>
+
+<div class="option" onclick="choose('Twenty Four Hot Wings + Extra Large Fries - R112.90')">
+Twenty Four Hot Wings + Extra Large Fries - R112.90
+</div>
+
+<div id="selected">No option selected</div>
+
+<button onclick="goCheckout()">Add To Cart & Checkout</button>
+
+</div>
+
+<script>
+
+let item = "";
+
+function choose(choice){
+
+item = choice;
+
+document.getElementById("selected").innerHTML =
+"Selected: " + choice;
+
+}
+
+function goCheckout(){
+
+if(item==""){
+alert("Please select an option first.");
+}
+else{
+window.location.href="checkout.html";
+}
+
+}
+
+</script>
+
+</body>
+</html>
