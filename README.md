@@ -104,6 +104,17 @@ Current Version: 1.0.0
 License
 
 This project was created for educational purposes.
-* Responsive navigation styling
-* Card animations
-* Focus styling for accessibility
+
+## Changelog
+
+### Version 1.0.0
+- Created homepage
+- Added responsive design
+- Added navigation menu
+- Added product catalogue pages
+- Added CSS styling
+- Added hover animations
+- Added media queries
+- Added accessibility focus styling
+- Uploaded project to GitHub
+- Added README documentation
