@@ -3,14 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta
-name="description"
-content="Contact Milly John's Burgers in Pretoria for bookings, enquiries, orders and customer support.">
+
+<meta name="description"
+content="Contact Milly John's Burgers in Pretoria for bookings, enquiries and customer support.">
+
 <title>Contact Us | Milly John's Burgers Pretoria</title>
-<link
-href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+
+<link rel="stylesheet"
+href="css_assets/mystyles.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
 rel="stylesheet">
-<link rel="stylesheet" href="css_assets/mystyles.css">
+
+<link
+rel="stylesheet"
+href="https://unpkg.com/leaflet/dist/leaflet.css">
 </head>
 <body>
 <!-- HEADER -->
@@ -42,95 +49,95 @@ Fresh, juicy burgers made with love every day.
 </nav>
 <!-- MAIN CONTENT -->
 <main>
+
 <section class="contact-section">
+
 <div class="container">
-<!-- CONTACT INFORMATION -->
+
 <div class="contact-info">
+
 <h2>Get In Touch</h2>
-<p>
-<strong>Phone:</strong><br>
-+27 12 345 6789
-</p>
-<br>
-<p>
-<strong>Email:</strong><br>
-info@millyjohnsburgers.co.za
-</p>
-<br>
-<p>
-<strong>Address:</strong><br>
-123 Burger Street,
-Pretoria,
-South Africa
-</p>
-<br>
-<p>
-<strong>Operating Hours:</strong><br>
-Monday – Sunday<br>
-08:00 – 22:00
-</p>
+
+<p><strong>Phone:</strong><br>
++27 12 345 6789</p>
+
+<p><strong>Email:</strong><br>
+info@millyjohnsburgers.co.za</p>
+
+<p><strong>Address:</strong><br>
+123 Burger Street, Pretoria</p>
+
+<p><strong>Hours:</strong><br>
+Mon-Sun 08:00 - 22:00</p>
+
 </div>
-<!-- CONTACT FORM -->
+
 <div class="contact-form">
+
 <h2>Send Us a Message</h2>
+
 <form
 id="contactForm"
 action="#"
 method="post">
-<label for="name">
-Full Name
-</label>
+
 <input
 type="text"
 id="name"
-name="name"
-placeholder="Enter your full name"
+placeholder="Full Name"
 required
 minlength="3">
-<label for="email">
-Email Address
-</label>
+
 <input
 type="email"
 id="email"
-name="email"
-placeholder="Enter your email address"
+placeholder="Email Address"
 required>
-<label for="phone">
-Phone Number
-</label>
+
 <input
 type="tel"
 id="phone"
-name="phone"
-placeholder="0123456789"
-required
-maxlength="10"
-pattern="[0-9]{10}">
-<label for="message">
-Message
-</label>
+placeholder="Phone Number"
+pattern="[0-9]{10,15}">
+
 <textarea
 id="message"
-name="message"
-placeholder="Type your message here..."
+placeholder="Write your message..."
 required
 minlength="10"></textarea>
+
 <p
 id="errorMsg"
 style="color:red;">
 </p>
-<p
+
+<div
 id="successMsg"
-style="color:green;">
-</p>
+class="success-message">
+</div>
+
 <button type="submit">
 Send Message
 </button>
+
 </form>
+
 </div>
+
 </div>
+
+<!-- INTERACTIVE MAP -->
+
+<div class="map-container">
+
+<h2>Find Us</h2>
+
+<div id="map"></div>
+
+</div>
+
 </section>
+
 </main>
 <!-- FOOTER -->
 <footer>
@@ -140,6 +147,10 @@ All Rights Reserved
 </p>
 </footer>
 <!-- JAVASCRIPT -->
+<script
+src="https://unpkg.com/leaflet/dist/leaflet.js">
+</script>
+
 <script src="js_assets/script.js"></script>
 </body>
 </html>
