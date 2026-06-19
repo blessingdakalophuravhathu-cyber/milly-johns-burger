@@ -114,6 +114,40 @@ This project was created for educational purposes.
 - Added product catalogue pages
 - Added CSS styling
 - Added hover animations
+- v1.1 – 19 June 2026
+- Added JavaScript client-side form validation.
+- Added validation for email, phone number, and message fields.
+- Implemented error messages for invalid inputs.
+- Added AJAX-style form submission to improve user experience.
+- Improved overall functionality of the contact page.
+- Version 1.2.0 – June 2026
+
+Added
+
+* Added a search bar to filter featured menu items dynamically using JavaScript.
+* Implemented dynamic product loading using JavaScript arrays and DOM manipulation.
+* Added a welcome modal displaying special offers when users visit the website.
+* Implemented a lightbox gallery for enlarging food images.
+* Added FAQ accordion functionality using JavaScript.
+* Added card reveal animations and smooth scrolling effects.
+* Added CSS hover effects and transitions for navigation links, buttons, and gallery images.
+* Implemented responsive design improvements for mobile devices.
+* Added JavaScript client-side form validation for name, email, phone number, and message fields.
+* Added success and error messages for form submission.
+* Added SEO improvements including meta descriptions, descriptive image alt text, internal linking, and mobile optimisation.
+
+Changed
+
+* Improved card styling and animations.
+* Enhanced user experience with interactive elements and visual transitions.
+* Improved search box styling and focus effects.
+* Updated featured section styling for better presentation.
+
+Fixed
+
+* Fixed disappearing featured menu cards caused by conflicting CSS and JavaScript.
+* Fixed card reveal animations.
+* Corrected CSS and JavaScript file separation by moving JavaScript code out of the CSS file.
 - Added media queries
 - Added accessibility focus styling
 - Uploaded project to GitHub
