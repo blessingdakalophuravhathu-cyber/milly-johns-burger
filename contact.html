@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta
+name="description"
+content="Contact Milly John's Burgers in Pretoria for bookings, enquiries, orders and customer support.">
+<title>Contact Us | Milly John's Burgers Pretoria</title>
+<link
+href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+rel="stylesheet">
+<link rel="stylesheet" href="css_assets/mystyles.css">
+</head>
+<body>
+<!-- HEADER -->
+<header>
+<h1>Milly John's Burgers</h1>
+<p>
+Fresh, juicy burgers made with love every day.
+</p>
+</header>
+<!-- NAVIGATION -->
+<nav>
+<ul class="navigation">
+<li>
+<a href="index.html">Home</a>
+</li>
+<li>
+<a href="menu.html">Menu</a>
+</li>
+<li>
+<a href="about.html">About Us</a>
+</li>
+<li>
+<a href="contact.html">Contact Us</a>
+</li>
+<li>
+<a href="enquiries.html">Enquiries</a>
+</li>
+</ul>
+</nav>
+<!-- MAIN CONTENT -->
+<main>
+<section class="contact-section">
+<div class="container">
+<!-- CONTACT INFORMATION -->
+<div class="contact-info">
+<h2>Get In Touch</h2>
+<p>
+<strong>Phone:</strong><br>
++27 12 345 6789
+</p>
+<br>
+<p>
+<strong>Email:</strong><br>
+info@millyjohnsburgers.co.za
+</p>
+<br>
+<p>
+<strong>Address:</strong><br>
+123 Burger Street,
+Pretoria,
+South Africa
+</p>
+<br>
+<p>
+<strong>Operating Hours:</strong><br>
+Monday – Sunday<br>
+08:00 – 22:00
+</p>
+</div>
+<!-- CONTACT FORM -->
+<div class="contact-form">
+<h2>Send Us a Message</h2>
+<form
+id="contactForm"
+action="#"
+method="post">
+<label for="name">
+Full Name
+</label>
+<input
+type="text"
+id="name"
+name="name"
+placeholder="Enter your full name"
+required
+minlength="3">
+<label for="email">
+Email Address
+</label>
+<input
+type="email"
+id="email"
+name="email"
+placeholder="Enter your email address"
+required>
+<label for="phone">
+Phone Number
+</label>
+<input
+type="tel"
+id="phone"
+name="phone"
+placeholder="0123456789"
+required
+maxlength="10"
+pattern="[0-9]{10}">
+<label for="message">
+Message
+</label>
+<textarea
+id="message"
+name="message"
+placeholder="Type your message here..."
+required
+minlength="10"></textarea>
+<p
+id="errorMsg"
+style="color:red;">
+</p>
+<p
+id="successMsg"
+style="color:green;">
+</p>
+<button type="submit">
+Send Message
+</button>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- FOOTER -->
+<footer>
+<p>
+&copy; 2026 Milly John's Burgers |
+All Rights Reserved
+</p>
+</footer>
+<!-- JAVASCRIPT -->
+<script src="js_assets/script.js"></script>
+</body>
+</html>

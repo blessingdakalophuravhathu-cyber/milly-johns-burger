@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<meta name="description"
+content="Order the Breakfast Burger and Muffin from Milly John's Burgers.">
+
+<title>Breakfast Burger and Muffin Order | Milly John's Burgers</title>
+
+<!-- GOOGLE FONT -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+rel="stylesheet">
+
+<style>
+
+/* BODY */
+body{
+margin:0;
+font-family:'Montserrat',sans-serif;
+background:#f4f7fb;
+color:#333;
+}
+
+/* HEADER */
+header{
+background:white;
+padding:25px;
+text-align:center;
+box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+header h1{
+color:#F5A623;
+margin:0;
+font-size:42px;
+}
+
+/* NAVIGATION */
+nav{
+background:#1F5E87;
+padding:15px;
+text-align:center;
+}
+
+nav a{
+color:white;
+margin:15px;
+text-decoration:none;
+font-weight:600;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#F5A623;
+}
+
+/* MAIN CONTAINER */
+.container{
+max-width:550px;
+margin:50px auto;
+background:white;
+padding:35px;
+border-radius:15px;
+box-shadow:0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* PAGE TITLE */
+.container h2{
+text-align:center;
+color:#1F5E87;
+margin-bottom:30px;
+}
+
+/* OPTIONS */
+.option{
+background:#f1f1f1;
+padding:18px;
+margin:15px 0;
+border-radius:10px;
+cursor:pointer;
+font-weight:600;
+transition:0.3s;
+}
+
+.option:hover{
+background:#e3e3e3;
+transform:translateY(-2px);
+}
+
+/* SELECTED DISPLAY */
+#selected{
+margin-top:20px;
+font-weight:bold;
+text-align:center;
+color:#1F5E87;
+font-size:18px;
+}
+
+/* BUTTON */
+button{
+width:100%;
+padding:16px;
+margin-top:25px;
+background:#F5A623;
+color:white;
+border:none;
+font-size:18px;
+font-weight:600;
+border-radius:10px;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+background:#d98d11;
+}
+
+/* FOOTER */
+footer{
+background:#1F5E87;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+
+<h1>Milly John's Burgers</h1>
+
+</header>
+
+<!-- NAVIGATION -->
+<nav>
+
+<a href="index.html">Home</a>
+
+<a href="menu.html">Menu</a>
+
+<a href="contact.html">Contact Us</a>
+
+<a href="about.html">About Us</a>
+
+<a href="enquiries.html">Enquiries</a>
+
+</nav>
+
+<!-- MAIN CONTENT -->
+<main>
+
+<div class="container">
+
+<h2>Breakfast Burger and Muffin</h2>
+
+<!-- OPTION 1 -->
+<div class="option"
+onclick="choose('Egg Toast and Bacon Only - R40.00')">
+
+Egg Toast and Bacon Only - R40.00
+
+</div>
+
+<!-- OPTION 2 -->
+<div class="option"
+onclick="choose('Small Breakfast Burger and Muffin + Hot Beverage - R47.90')">
+
+Small Breakfast Burger and Muffin + Hot Beverage - R47.90
+
+</div>
+
+<!-- OPTION 3 -->
+<div class="option"
+onclick="choose('Medium Breakfast Burger and Muffin + Hot Beverage - R60.00')">
+
+Medium Breakfast Burger and Muffin + Hot Beverage - R60.00
+
+</div>
+
+<!-- OPTION 4 -->
+<div class="option"
+onclick="choose('Large Breakfast Burger and Muffin + Hot Beverage - R75.00')">
+
+Large Breakfast Burger and Muffin + Hot Beverage - R75.00
+
+</div>
+
+<!-- SELECTED OPTION -->
+<div id="selected">
+
+No option selected
+
+</div>
+
+<!-- CHECKOUT BUTTON -->
+<button onclick="goCheckout()">
+
+Add To Cart & Checkout
+
+</button>
+
+</div>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+
+<p>
+&copy; 2026 Milly John's Burgers |
+All Rights Reserved
+</p>
+
+</footer>
+
+<!-- JAVASCRIPT -->
+<script>
+
+let item = "";
+
+function choose(choice){
+
+item = choice;
+
+document.getElementById("selected").innerHTML =
+"Selected: " + choice;
+
+}
+
+function goCheckout(){
+
+if(item==""){
+
+alert("Please select an option first.");
+
+}else{
+
+window.location.href="checkout.html";
+
+}
+
+}
+
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Milkshake Order</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+margin:0;
+font-family:Montserrat, sans-serif;
+background:#f4f4f4;
+}
+
+header{
+background:#1F5E87;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+nav{
+background:#174866;
+padding:15px;
+text-align:center;
+}
+
+nav a{
+color:white;
+margin:0 15px;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav a:hover{
+text-decoration:underline;
+}
+
+.container{
+max-width:500px;
+margin:30px auto;
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+h2{
+text-align:center;
+color:#1F5E87;
+}
+
+.option{
+background:#eeeeee;
+padding:15px;
+margin:10px 0;
+border-radius:8px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.option:hover{
+background:#dddddd;
+}
+
+button{
+width:100%;
+padding:15px;
+margin-top:20px;
+background:#F5A623;
+color:white;
+border:none;
+font-size:18px;
+border-radius:8px;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+background:#e49300;
+}
+
+#selected{
+margin-top:15px;
+font-weight:bold;
+text-align:center;
+color:#1F5E87;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Milly John's Burgers</h1>
+</header>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="menu.html">Menu</a>
+<a href="contact.html">Contact us</a>
+<a href="about.html">About us</a>
+<a href="enquiries.html">Enquiries</a>
+</nav>
+
+<div class="container">
+
+<h2>Vanilla Milkshake</h2>
+
+<div class="option" onclick="choose('Small Vanilla Milkshake - R18.00')">
+Small Vanilla Milkshake - R18.00
+</div>
+
+<div class="option" onclick="choose('Medium Vanilla Milkshake - R28.00')">
+Medium Vanilla Milkshake - R28.00
+</div>
+
+<div class="option" onclick="choose('Large Vanilla Milkshake - R24.90')">
+Large Vanilla Milkshake - R24.90
+</div>
+
+<div id="selected">No option selected</div>
+
+<button onclick="goCheckout()">Add To Cart & Checkout</button>
+
+</div>
+
+<script src="js_assets/script.js"></script>
+
+
+</body>
+</html>
